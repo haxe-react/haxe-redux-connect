@@ -9,6 +9,9 @@
     "redux"
   ],
   "classPath": "src",
+  "dependencies": {
+    "redux": ""
+  },
   "contributors": [
     "klabz"
   ]
