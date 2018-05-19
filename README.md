@@ -5,8 +5,6 @@ A shorthand for react-redux `connect(...)` to transform a `ReactComponent` into 
 This is a library meant to work with `haxe-react` and `haxe-redux`, adding support for `@:connect` meta on react components, as the `@connect` decorator of react-redux.
 Note that typing is not checked here; however react-redux does some checks at runtime.
 
-`ReactRedux` extern is temporarily included, but will be removed once included in `haxe-redux`.
-
 ## Usage
 
 ### Installation
