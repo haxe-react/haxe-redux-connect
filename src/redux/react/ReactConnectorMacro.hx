@@ -8,7 +8,7 @@ import haxe.macro.Type;
 import react.jsx.JsxStaticMacro;
 import react.macro.ReactWrapperMacro;
 
-#if (react > "1.101")
+#if ((react > "2.0") || react_next)
 import react.macro.ReactComponentMacro;
 #else
 import react.ReactComponentMacro;
@@ -20,7 +20,7 @@ class ReactConnectorMacro {
 	static inline var CONNECTED_META = ':connected_by_macro';
 
 	static function addBuilder() {
-		#if (react > "1.101")
+		#if ((react > "2.0") || (react_next > "1.101"))
 		ReactComponentMacro.insertBuilderBefore(
 			ReactWrapperMacro.WRAP_BUILDER,
 			buildComponent,
@@ -46,7 +46,7 @@ class ReactConnectorMacro {
 			var connectMeta = inClass.meta.extract(CONNECT_META).shift();
 			var connectParams = getConnectParams(inClass, connectMeta.params, fields);
 
-			#if (react < "1.5")
+			#if ((react < "1.5") && !react_next)
 			var fieldName = '_connected';
 			while (hasField(fields, fieldName)) fieldName = '_$fieldName';
 

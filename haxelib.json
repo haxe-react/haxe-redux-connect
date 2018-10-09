@@ -1,7 +1,7 @@
 {
   "name": "redux-connect",
   "description": "@:connect support for haxe-redux",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "releasenote": "React-next compatibility and improvements. (See CHANGELOG.md)",
   "url": "https://github.com/kLabz/haxe-redux-connect",
   "license": "MIT",
