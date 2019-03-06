@@ -71,7 +71,7 @@ class ReactConnectorMacro {
 			// Add new metas
 			inClass.meta.add(CONNECTED_META, [], connectMeta.pos);
 			inClass.meta.add(ReactWrapperMacro.WRAP_META, [
-				macro redux.react.ReactRedux.connect($a{connectParams})
+				macro @:pos(connectMeta.pos) redux.react.ReactRedux.connect($a{connectParams})
 			], connectMeta.pos);
 
 			// Add old meta

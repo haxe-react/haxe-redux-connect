@@ -1,8 +1,8 @@
 {
   "name": "redux-connect",
   "description": "@:connect support for haxe-redux",
-  "version": "0.2.0",
-  "releasenote": "React-next compatibility and improvements. (See CHANGELOG.md)",
+  "version": "0.2.1",
+  "releasenote": "Add position to underlying @:wrap",
   "url": "https://github.com/kLabz/haxe-redux-connect",
   "license": "MIT",
   "tags": [
